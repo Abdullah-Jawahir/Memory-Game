@@ -1,0 +1,99 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+
+.container .img-gallery {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 15px;
+    width: 60%;
+    margin-right: 20px;
+
+}
+
+.container .img-gallery .img {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container .img-gallery .img img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+} 
+
+.container .img-gallery .img .mask {
+
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    position: absolute;
+    visibility: visible;
+    /* visibility: hidden; */
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+
+.container .score-card{
+
+    padding: 15px;
+    border-radius: 5px;
+    font-size: large;
+    color: antiquewhite;
+    position: sticky;
+    top: 5%;
+    font-weight: bolder;
+}
+
+
+.container .rules-card {
+
+    align-self: baseline;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+
+}
+
+.container .score-card, .container .rules-card {
+
+    margin-right: 20px;
+    background-color: cornflowerblue;
+}
+
+.container .rules-card .rules {
+
+    width: 95%;
+    margin: auto;
+    font-size: large;
+    padding: 10px;
+    color: antiquewhite;
+}
+
+
