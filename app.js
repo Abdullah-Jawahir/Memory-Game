@@ -40,7 +40,7 @@ masks.forEach((mask) => {
                 clickedMasks = [];
                 // Adding 1 to both score and attempt.
                 score += 1;
-                attempt += 1;
+                // attempt += 1;
             } 
             // Comparing two srcs.
             else if ( imgSrcs[0] != imgSrcs[1]) {
@@ -58,10 +58,10 @@ masks.forEach((mask) => {
                 // Clear the array(To prevent the array from storing more than two values)
                 imgSrcs = [];
 
-                // Make sure we don't get a negative point 
-                if ( score >= 1 ) {
-                    score -= 1;
-                }
+                // // Make sure we don't get a negative point 
+                // if ( score >= 1 ) {
+                //     score -= 1;
+                // }
                 
                 // Add 1 to the attempt.
                 attempt += 1;
@@ -75,7 +75,7 @@ masks.forEach((mask) => {
 
         // Here I have used (imgs.length / 2), bcz to make sure that if we add more images to our gallery the game will get harder and harder.
         // To give another chance add::  || attempt == (imgs.length / 2 + 1)
-        if ( score == (imgs.length / 2) && attempt == (imgs.length / 2)) {
+        if ( score == (imgs.length / 2)) {
             // This timeout will make sure that all our images are facing backwards.
             setTimeout(() => {
                 alert('Congratulation! You have won the Game');
